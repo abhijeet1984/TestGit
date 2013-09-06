@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.foresters.oAuth.OAuthToken" table="ProducerToken" >
+	
+		<id name="producerId" >
+			<column name="pId" />
+			
+		</id>
+		<property name="oauthToken" column="oauth_token"/>
+		<property name="oauthTokenSecret" column="oauth_token_secret"/>
+		<property name="oauthTimestamp" column="oauth_timestamp"/>
+		<property name="oauthNonce" column="oauth_nonce"/>
+		
+	</class>
+</hibernate-mapping>
